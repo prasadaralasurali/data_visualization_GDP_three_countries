@@ -1,0 +1,205 @@
+Year,Country,GDP,GDP Type
+1990,China,1.12,Total
+1991,China,1.26,Total
+1992,China,1.48,Total
+1993,China,1.72,Total
+1994,China,1.99,Total
+1995,China,2.25,Total
+1996,China,2.52,Total
+1997,China,2.8,Total
+1998,China,3.05,Total
+1999,China,3.34,Total
+2000,China,3.7,Total
+2001,China,4.1,Total
+2002,China,4.55,Total
+2003,China,5.1,Total
+2004,China,5.77,Total
+2005,China,6.64,Total
+2006,China,7.71,Total
+2007,China,9.05,Total
+2008,China,10.11,Total
+2009,China,11.15,Total
+2010,China,12.48,Total
+2011,China,13.96,Total
+2012,China,15.33,Total
+2013,China,16.79,Total
+2014,China,18.34,Total
+2015,China,19.82,Total
+2016,China,21.29,Total
+2017,China,23.19,Total
+2018,China,25.18,Total
+2019,China,27.27,Total
+2020,China,29.46,Total
+2021,China,31.8,Total
+2022,China,34.32,Total
+2050,China,58.5,Total
+1990,India,1,Total
+1991,India,1.04,Total
+1992,India,1.12,Total
+1993,India,1.21,Total
+1994,India,1.31,Total
+1995,India,1.44,Total
+1996,India,1.58,Total
+1997,India,1.67,Total
+1998,India,1.79,Total
+1999,India,1.98,Total
+2000,India,2.11,Total
+2001,India,2.26,Total
+2002,India,2.38,Total
+2003,India,2.62,Total
+2004,India,2.9,Total
+2005,India,3.27,Total
+2006,India,3.69,Total
+2007,India,4.11,Total
+2008,India,4.35,Total
+2009,India,4.76,Total
+2010,India,5.31,Total
+2011,India,5.78,Total
+2012,India,6.21,Total
+2013,India,6.72,Total
+2014,India,7.34,Total
+2015,India,8,Total
+2016,India,8.66,Total
+2017,India,9.49,Total
+2018,India,10.45,Total
+2019,India,11.51,Total
+2020,India,12.67,Total
+2021,India,13.97,Total
+2022,India,15.43,Total
+2050,India,44.1,Total
+1990,USA,5.98,Total
+1991,USA,6.17,Total
+1992,USA,6.54,Total
+1993,USA,6.88,Total
+1994,USA,7.31,Total
+1995,USA,7.66,Total
+1996,USA,8.1,Total
+1997,USA,8.61,Total
+1998,USA,9.09,Total
+1999,USA,9.66,Total
+2000,USA,10.28,Total
+2001,USA,10.62,Total
+2002,USA,10.98,Total
+2003,USA,11.51,Total
+2004,USA,12.27,Total
+2005,USA,13.09,Total
+2006,USA,13.86,Total
+2007,USA,14.48,Total
+2008,USA,14.72,Total
+2009,USA,14.42,Total
+2010,USA,14.96,Total
+2011,USA,15.52,Total
+2012,USA,16.16,Total
+2013,USA,16.69,Total
+2014,USA,17.39,Total
+2015,USA,18.04,Total
+2016,USA,18.57,Total
+2017,USA,19.42,Total
+2018,USA,20.35,Total
+2019,USA,21.24,Total
+2020,USA,22.06,Total
+2021,USA,22.89,Total
+2022,USA,23.76,Total
+2050,USA,34.1,Total
+1990,China,0.99,Per Capita
+1991,China,1.1,Per Capita
+1992,China,1.27,Per Capita
+1993,China,1.46,Per Capita
+1994,China,1.67,Per Capita
+1995,China,1.87,Per Capita
+1996,China,2.07,Per Capita
+1997,China,2.28,Per Capita
+1998,China,2.46,Per Capita
+1999,China,2.66,Per Capita
+2000,China,2.93,Per Capita
+2001,China,3.23,Per Capita
+2002,China,3.55,Per Capita
+2003,China,3.96,Per Capita
+2004,China,4.46,Per Capita
+2005,China,5.09,Per Capita
+2006,China,5.88,Per Capita
+2007,China,6.86,Per Capita
+2008,China,7.64,Per Capita
+2009,China,8.37,Per Capita
+2010,China,9.33,Per Capita
+2011,China,10.38,Per Capita
+2012,China,11.35,Per Capita
+2013,China,12.37,Per Capita
+2014,China,13.44,Per Capita
+2015,China,14.45,Per Capita
+2016,China,15.4,Per Capita
+2017,China,16.68,Per Capita
+2018,China,18,Per Capita
+2019,China,19.38,Per Capita
+2020,China,20.81,Per Capita
+2021,China,22.34,Per Capita
+2022,China,23.96,Per Capita
+2050,China,44,Per Capita
+1990,India,1.15,Per Capita
+1991,India,1.17,Per Capita
+1992,India,1.24,Per Capita
+1993,India,1.3,Per Capita
+1994,India,1.39,Per Capita
+1995,India,1.5,Per Capita
+1996,India,1.61,Per Capita
+1997,India,1.67,Per Capita
+1998,India,1.76,Per Capita
+1999,India,1.92,Per Capita
+2000,India,2,Per Capita
+2001,India,2.11,Per Capita
+2002,India,2.18,Per Capita
+2003,India,2.36,Per Capita
+2004,India,2.58,Per Capita
+2005,India,2.86,Per Capita
+2006,India,3.17,Per Capita
+2007,India,3.48,Per Capita
+2008,India,3.64,Per Capita
+2009,India,3.92,Per Capita
+2010,India,4.32,Per Capita
+2011,India,4.63,Per Capita
+2012,India,4.92,Per Capita
+2013,India,5.26,Per Capita
+2014,India,5.66,Per Capita
+2015,India,6.1,Per Capita
+2016,India,6.62,Per Capita
+2017,India,7.15,Per Capita
+2018,India,7.77,Per Capita
+2019,India,8.45,Per Capita
+2020,India,9.18,Per Capita
+2021,India,10,Per Capita
+2022,India,10.89,Per Capita
+2050,India,26,Per Capita
+1990,USA,23.95,Per Capita
+1991,USA,24.41,Per Capita
+1992,USA,25.49,Per Capita
+1993,USA,26.46,Per Capita
+1994,USA,27.78,Per Capita
+1995,USA,28.78,Per Capita
+1996,USA,30.07,Per Capita
+1997,USA,31.57,Per Capita
+1998,USA,32.95,Per Capita
+1999,USA,34.62,Per Capita
+2000,USA,36.45,Per Capita
+2001,USA,37.27,Per Capita
+2002,USA,38.17,Per Capita
+2003,USA,39.68,Per Capita
+2004,USA,41.92,Per Capita
+2005,USA,44.31,Per Capita
+2006,USA,46.44,Per Capita
+2007,USA,48.06,Per Capita
+2008,USA,48.4,Per Capita
+2009,USA,47,Per Capita
+2010,USA,48.37,Per Capita
+2011,USA,49.78,Per Capita
+2012,USA,51.43,Per Capita
+2013,USA,52.75,Per Capita
+2014,USA,54.54,Per Capita
+2015,USA,56.12,Per Capita
+2016,USA,57.44,Per Capita
+2017,USA,59.61,Per Capita
+2018,USA,62,Per Capita
+2019,USA,64.21,Per Capita
+2020,USA,66.19,Per Capita
+2021,USA,68.14,Per Capita
+2022,USA,70.2,Per Capita
+2050,USA,104,Per Capita

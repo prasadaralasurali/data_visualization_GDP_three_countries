@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+    
+    <style>
+	
+	  circle[class*="2050"] {
+        fill: white;
+		stroke-width: 3;
+      }
+	  
+	  circle[class*="2022"] {
+        fill: white;
+		stroke-width: 3;
+      }
+	  
+	  circle[class*="2021"] {
+        fill: white;
+		stroke-width: 3;
+      }
+	  
+	  circle[class*="2020"] {
+        fill: white;
+		stroke-width: 3;
+      }
+	  
+	  circle[class*="2019"] {
+        fill: white;
+		stroke-width: 3;
+      }
+	  
+	  circle[class*="2018"] {
+        fill: white;
+		stroke-width: 3;
+      }
+	  
+	  circle[class*="2017"] {
+        fill: white;
+		stroke-width: 3;
+      }
+	  
+	  circle[class*="2016"] {
+        fill: white;
+		stroke-width: 3;
+      }
+	  
+	  div{	  
+	  position:relative;
+	  left: 490px;
+	  width: 610px;
+	  margin: 0;
+	  } 
+
+      h3 {	    
+		text-align:center;
+		position:relative;
+		top:0px;
+		font-size: 23px;
+      }
+	  
+	  #btn1 {
+		font-size: 20px;
+		font-family: cambria;
+		background-color: Teal;
+		position:relative;
+		top: 35px;
+ 		left: 650px;
+		color: white;
+		display: inline-block;
+		margin: 0 auto;		
+	  }
+	  
+	  #btn2 {
+		font-size: 20px;
+		font-family: cambria;
+		background-color: SaddleBrown;
+		position:relative;
+		top: 70px;
+ 		left: 545px;
+		color: white;
+		display: inline-block;
+		margin: 0 auto;
+	  }
+	  
+	  svg {
+	  position: relative;
+	  align: center;
+	  left: 190px;
+	  top: -150px;	  
+	  }
+	  
+	  #title1{
+	  position: relative;
+	  align: center;
+	  top: 20px;
+	  }
+	  
+	  #title2{
+	  position: relative;
+	  align: center;
+	  top: 20px;
+	  }
+	  
+	  p1 {
+	  margin: 0 auto;
+	  display: inline-block;	
+	  font-size: 14px;
+	  top: 100px;		
+	  }
+	  
+	  p2 {
+	  position:relative;
+	  margin: 0 auto;
+	  display: inline-block;
+	  align: center;		
+	  text-align: justify;
+	  font-size: 13px;
+	  top: 10px;	
+	  }
+	  
+	  p3{
+	  position: relative;
+	  top: -10px;
+	  margin: 0 auto;
+	  display: inline-block;
+	  align: center;		
+	  font-size: 12px;
+	  right:50px;	  
+	  }
+	  
+	  p4{
+	  position:relative;
+	  width: 600px;
+	  margin: 0 auto;
+	  display: inline-block;
+	  align: center;
+	  font-size: 11px;
+	  top: 545px;	
+	  }
+	  
+	  p5{
+	  position:relative;
+	  margin: 0 auto;
+	  width: 150px;
+	  top: -50px;
+	  font-size: 12px;
+	  left: 650px;
+	  display: inline-block;
+	  }
+    </style>
+
+    <script type="text/javascript">
+      function draw(data) {
+      
+      /*
+        D3.js setup
+      */
+
+          "use strict";
+		  //create variables for margin, width and height
+          var margin = 300,
+              width = 1000 - margin,
+              height = 650 - margin;
+
+		//create SVG object
+          var svg = d3.select("body")
+            .append("svg")
+              .attr("width", width + margin)
+              .attr("height", height + margin)
+            .append('g')
+                .attr('class','chart');
+		
+      /*
+        Dimple.js Chart construction
+      */
+	  
+	  //filter data for total GDP
+		var filteredData = dimple.filterData(data, "GDP Type", "Total");
+		//chart for total GDP
+          var myChart = new dimple.chart(svg, filteredData);
+		  myChart.setBounds(300, 70, 600, 500)
+          var x = myChart.addTimeAxis("x", "Year"); 
+          var y = myChart.addMeasureAxis("y", "GDP");
+		  y.title = "Total GDP (X trillion US$)"
+		  x.fontSize = "14px";
+		  y.fontSize = "14px";
+          x.dateParseFormat = "%Y";
+          x.tickFormat = "%Y";
+          x.timeInterval = 5;
+          myChart.addSeries("Country", dimple.plot.line);
+          myChart.addSeries("Country", dimple.plot.scatter);
+		  var myLegend = myChart.addLegend(60, 40, 450, 20, "right");
+		  myLegend.fontSize = "14px";
+          myChart.staggerDraw = true;
+		  myChart.draw();
+		  
+		//buttons to separate total GDP from per capita GDP
+	  d3.select("#btn1").on("click", function(){
+	  //chart for total GDP (displayed when total GDP button is clicked)
+		myChart.data = dimple.filterData(data, "GDP Type", "Total");
+        y.title = "Total GDP (X trillion US$)"
+		myChart.draw();
+		//display title for total GDP chart, and hide title for per capita GDP chart
+		var x = document.getElementById('title1');    
+        x.style.display = 'block';
+		var y11 = document.getElementById('title2');
+        y11.style.display = 'none';});
+		    
+		//buttons to separate per capita GDP from total GDP  
+	  d3.select("#btn2").on("click", function(){
+		//filter data for per capita GDP
+		myChart.data = dimple.filterData(data, "GDP Type", "Per Capita");
+        y.title = "Per Capita GDP (X thousand US$)";
+		//chart for per capita GDP
+		myChart.draw();
+		//display title for per capita GDP chart, and hide title for total GDP chart
+		var x = document.getElementById('title1');    
+        x.style.display = 'none';
+		var y11 = document.getElementById('title2');    
+        y11.style.display = 'block';
+		});		
+        };
+
+    </script>
+  </head>
+
+  <body>
+  
+	<div>
+	
+	<h3>China has, and India will become richer than USA
+	<br/> Will a Chinese or an Indian ever be richer than an American?</h3>
+	<p1>
+	China overtook GDP* of USA in 2013. India is projected to overtake 
+	GDP of USA by 2050. While China and India are lot richer than USA
+	as countries, a Chinese and an Indian will still be lot poorer than
+	an American (Click 'Per Capita GDP' button) even in 2050. In fact
+	income disparity between Indians/Chinese and Americans is getting 
+	wider.	
+	</p1>
+	<p2>	
+	*GDP is calculated in terms of PPP (Purchasing Power Parity).
+	Purchasing power of a currency refers to the quantity of the 
+	currency needed to purchase a given unit of a good or service
+	(to put this into perspective, a Big Mac hamburger costs only $1.62 in India, but costs
+	$5.06 in USA).	
+	</p2>
+	<h3 id="title1">Total GDP</h3>
+	<h3 hidden id="title2"> Per Capita GDP</h3>
+	<div id="chartContainer"></div>      
+	<button id="btn1">Total GDP</button>
+	<button id="btn2">Per Capita GDP</button>
+	
+	<p3>
+	Filled circles = past GDP; open circles = projected GDP
+	</p3>
+	<p4>
+	<b>Data source</b>: past GDP; Wikipedia, projected GDP (2016-22);
+	IMF, projected GDP (2050); PricewaterhouseCoopers (PwC)
+	</p4>
+	<p5>
+	Click to switch between total, and per capita GDP 
+	</p5>
+	</div>
+  
+  <script type="text/javascript">
+  /*
+    load the CSV file
+    and pass the contents of it to the draw function
+    */
+  d3.csv("GDP_PPP_data_5.csv", draw);
+  </script>
+
+  </body>
+</html>
